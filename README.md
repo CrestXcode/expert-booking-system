@@ -16,6 +16,8 @@ A full-stack web application for booking sessions with domain experts in real-ti
 - View bookings by email with status tracking
 
 ## Project Structure
+
+```
 expert-booking/
 ├── backend/
 │   ├── config/         # DB connection
@@ -25,11 +27,12 @@ expert-booking/
 │   ├── middleware/     # Error handler
 │   └── server.js
 └── frontend/
-└── src/
-├── pages/      # ExpertList, ExpertDetail, Booking, MyBookings
-├── components/
-├── context/    # Socket context
-└── utils/      # Axios instance
+    └── src/
+        ├── pages/      # ExpertList, ExpertDetail, Booking, MyBookings
+        ├── components/
+        ├── context/    # Socket context
+        └── utils/      # Axios instance
+```
 
 ## API Endpoints
 | Method | Endpoint | Description |

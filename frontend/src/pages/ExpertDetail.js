@@ -87,10 +87,19 @@ export default function ExpertDetail() {
           <span className="expert-category">{expert.category}</span>
           <p className="expert-bio" style={{ marginTop: '0.5rem' }}>{expert.bio}</p>
           <div className="expert-meta" style={{ marginTop: '0.8rem' }}>
-            <span>{expert.rating} Rating</span>
-            <span>{expert.experience} years exp</span>
-            <span>{expert.hourlyRate}/hr</span>
-          </div>
+      <div className="meta-item">
+          <div className="meta-value">{expert.rating}</div>
+          <div className="meta-label">Rating</div>
+       </div>
+      <div className="meta-item">
+         <div className="meta-value">{expert.experience} yrs</div>
+         <div className="meta-label">Experience</div>
+      </div>
+    <div className="meta-item">
+        <div className="meta-value">₹{expert.hourlyRate}</div>
+        <div className="meta-label">Per Hour</div>
+    </div>
+</div>
         </div>
       </div>
 
